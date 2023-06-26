@@ -22,16 +22,47 @@
 
 <br>
 
-3. `mlm` 和 `mvc` 等分别是什么意思？
+3. `mlm` 和 `mvc` 等缩写，分别是什么意思？
 - MLM: Masked Language Modelling
 - MGM: Masked Gene Modelling
 - MVC: Masked Value Prediction for Cell Embedding
+- CLS: Celltype Classification
+- CCE: Contrastive Cell Embedding
 - ECS: Elastic Cell Similarity
 - DAB: Domain Adaptation by Reverse Backpropagation
 - DAR: Domain Adaptation by Reverse Backpropagation
 
 <br>
 
-4. scGPT 的 Transformer 模型有哪些 Task heads？
-- ![scFormer Fig. 1](https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285/F1.large.jpg)
+4. Masked MSE loss 和 negative log-likelihood loss 是如何计算的？
+```python
+import torch
+import torch.nn.functional as F
 
+def masked_mse_loss(
+    input: torch.Tensor, target: torch.Tensor, mask: torch.Tensor
+) -> torch.Tensor:
+    mask = mask.float()
+    loss = F.mse_loss(input * mask, target * mask, reduction="sum")
+    return loss / mask.sum()
+
+def criterion_neg_log_bernoulli(
+    input: torch.Tensor, target: torch.Tensor, mask: torch.Tensor
+) -> torch.Tensor:
+    mask = mask.float()
+    bernoulli = torch.distributions.Bernoulli(probs=input)
+    masked_log_probs = bernoulli.log_prob((target > 0).float()) * mask
+    return -masked_log_probs.sum() / mask.sum()
+```
+
+<br>
+
+5. scFormer 和 scGPT 的 Transformer 模型有哪些 Task heads？
+
+![scFormer Fig. 1](https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285/F1.large.jpg)
+- MGM: Masked Gene Modelling
+- MVC: Masked Value Prediction for Cell Embedding
+- ECS: Elastic Cell Similarity
+- DAR: Domain Adaptation by Reverse Backpropagation
+
+<br>
