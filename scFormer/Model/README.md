@@ -1,5 +1,6 @@
 # The architecture
 
+![scFormer Fig. 1](https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285/F1.large.jpg)
 <br>
 
 ## `model.py`
@@ -12,6 +13,7 @@
 	- self.dsbn [class **DomainSpecificBatchNorm1d**(nn.Module)] OR self.bn [nn.**BatchNorm1d**]
 	- self.transformer_encoder [nn.**TransformerEncoder**]
 
+	<br>
 
 	- self.decoder [class **ExprDecoder**(nn.Module)]
 		- `mlm_output`, `mlm_zero_probs`
@@ -35,6 +37,7 @@
 	- self.pert_encoder [nn.**Embedding**]
 	- self.transformer_encoder [nn.**TransformerEncoder**]
 
+	<br>
 
 	- self.decoder [nn.**Linear**]
 		- `mlm_output`
