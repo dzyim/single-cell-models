@@ -5,16 +5,16 @@
 ## Q&A
 
 1. **在 scGPT/examples/finetune_integration.py 模型训练中，存在哪些损失函数？**
-- `loss_mse`: masked MSE loss between `mlm_output` and `target_values` （表达量水平）
-- `loss_zero_log_prob`: negative log-likelihood loss between `mlm_zero_probs` and `target_values > 0` （表达量是否为零）
-- `loss_gepc`: masked MSE loss between `mvc_output` and `target_values` （表达量水平）
-- `loss_gepc_zero_log_prob`: negative log-likelihood loss between `mvc_zero_probs` and `target_values > 0` （表达量是否为零）
-- `loss_ecs`: elastic cell similarity loss （ ？）
-- `loss_dab`: cross entropy loss between `dab_output` and `batch_labels` （批次标签）
+- `loss_mse`: *masked MSE loss* between `mlm_output` and `target_values` （表达量水平）
+- `loss_zero_log_prob`: *negative log-likelihood loss* between `mlm_zero_probs` and `target_values > 0` （表达量是否为零）
+- `loss_gepc`: *masked MSE loss* between `mvc_output` and `target_values` （表达量水平）
+- `loss_gepc_zero_log_prob`: *negative log-likelihood loss* between `mvc_zero_probs` and `target_values > 0` （表达量是否为零）
+- `loss_ecs`: *elastic cell similarity loss*
+- `loss_dab`: *cross entropy loss* between `dab_output` and `batch_labels` （批次标签）
 
 <br>
 
-2. **如何计算 masked MSE loss 和 negative log-likelihood loss ？**
+2. **如何计算 masked MSE loss、negative log-likelihood loss、以及 elastic cell similarity loss ？**
 ```python
 import torch
 import torch.nn.functional as F
@@ -33,6 +33,17 @@ def criterion_neg_log_bernoulli(
     bernoulli = torch.distributions.Bernoulli(probs=input)
     masked_log_probs = bernoulli.log_prob((target > 0).float()) * mask
     return -masked_log_probs.sum() / mask.sum()
+
+def elastic_cell_similarity_loss(cell_emb: torch.Tensor) -> torch.Tensor:
+    # normalize the embedding
+    cell_emb_normed = F.normalize(cell_emb, p=2, dim=1)
+    cos_sim = torch.mm(cell_emb_normed, cell_emb_normed.t())  # (batch, batch)
+    # mask out diagnal elements
+    mask = torch.eye(cos_sim.size(0)).bool().to(cos_sim.device)
+    cos_sim = cos_sim.masked_fill(mask, 0.0)
+    # only optimize positive similarities
+    cos_sim = F.relu(cos_sim)
+    return torch.mean(1 - (cos_sim - self.ecs_threshold) ** 2)
 ```
 
 <br>
