@@ -17,6 +17,8 @@
 
 	- self.decoder [class **ExprDecoder**(nn.Module)]
 		- `mlm_output`, `mlm_zero_probs`
+	- self._get_cell_emb_from_layer [func]
+		- `cell_emb`, `loss_ecs`
 	- self.cls_decoder [class **ClsDecoder**(nn.Module)]
 		- `cls_output`
 	- self.mvc_decoder [class **MVCDecoder**(nn.Module)]
@@ -24,7 +26,7 @@
 	- self.grad_reverse_discriminator [class **AdversarialDiscriminator**(nn.Module)]
 		- `dab_output`
 	- self.sim [class **Similarity**(nn.Module)]
-		- `loss_cce`, `loss_ecs`
+		- `loss_cce`
 
 <br>
 
@@ -41,12 +43,14 @@
 
 	- self.decoder [nn.**Linear**]
 		- `mlm_output`
+	- self._get_cell_emb_from_layer [func]
+		- `cell_emb`, `loss_ecs`
 	- self.cls_decoder [class **ClsDecoder**(nn.Module)]
 		- `cls_output`
 	- self.mvc_decoder [class **MVCDecoder**(nn.Module)]
 		- `mvc_output`
 	- self.sim [class **Similarity**(nn.Module)]
-		- `loss_cce`, `loss_ecs`
+		- `loss_cce`
 
 <br>
 
