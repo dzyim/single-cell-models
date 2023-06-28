@@ -11,7 +11,8 @@
 	- self.batch_encoder [class **BatchLabelEncoder**(nn.Module)]
 	- self.dsbn [class **DomainSpecificBatchNorm1d**(nn.Module)] OR self.bn [nn.**BatchNorm1d**]
 	- self.transformer_encoder [nn.**TransformerEncoder**] OR self.transformer_encoder [class **FastTransformerEncoderWrapper**(nn.Module)]
-
+	
+	<br>
 
 	- self.decoder [class **ExprDecoder**(nn.Module)]
 		- `mlm_output`, `mlm_zero_probs`
@@ -37,7 +38,8 @@
 	- self.pert_encoder [nn.**Embedding**]
 	- self.bn [nn.**BatchNorm1d**]
 	- self.transformer_encoder [nn.**TransformerEncoder**] OR self.transformer_encoder [class **FastTransformerEncoderWrapper**(nn.Module)]
-
+	
+	<br>
 
 	- self.decoder [class **ExprDecoder**(nn.Module)]
 		- `mlm_output`, `mlm_zero_probs`
