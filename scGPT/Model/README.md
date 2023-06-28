@@ -1,5 +1,6 @@
 # The architecture
 
+![scFormer Fig. 1](https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285/F1.large.jpg)
 <br>
 
 ## `model.py`
