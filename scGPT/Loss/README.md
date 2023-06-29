@@ -34,7 +34,9 @@ def criterion_neg_log_bernoulli(
     masked_log_probs = bernoulli.log_prob((target > 0).float()) * mask
     return -masked_log_probs.sum() / mask.sum()
 
-def elastic_cell_similarity_loss(cell_emb: torch.Tensor) -> torch.Tensor:
+def elastic_cell_similarity_loss(
+    cell_emb: torch.Tensor, ecs_threshold: float = 0.8
+) -> torch.Tensor:
     # normalize the embedding
     cell_emb_normed = F.normalize(cell_emb, p=2, dim=1)
     cos_sim = torch.mm(cell_emb_normed, cell_emb_normed.t())  # (batch, batch)
@@ -43,7 +45,7 @@ def elastic_cell_similarity_loss(cell_emb: torch.Tensor) -> torch.Tensor:
     cos_sim = cos_sim.masked_fill(mask, 0.0)
     # only optimize positive similarities
     cos_sim = F.relu(cos_sim)
-    return torch.mean(1 - (cos_sim - self.ecs_threshold) ** 2)
+    return torch.mean(1 - (cos_sim - ecs_threshold) ** 2)
 ```
 
 <br>
@@ -53,6 +55,7 @@ def elastic_cell_similarity_loss(cell_emb: torch.Tensor) -> torch.Tensor:
 - `explicit_zero_prob` (default: True)
 - `ecs_thres` (default: 0.8)
 - `dab_weight` (default: 1.0)
+- `ecs_weight` (default: 10)  # In the script, it's a magic value without a variable name
 
 <br>
 
