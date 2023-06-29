@@ -1,4 +1,13 @@
-# 损失函数
+# Training
+
+<br>
+
+## Notes
+
+- A run-time error:
+    - In this line (https://github.com/bowang-lab/scFormer/blob/2df344a75e5f57cdfa296987786e040912d33935/examples/perturbation/dev_perturb.py#L228): `x.shape` should be `(batch_size * n_genes, 2)`.
+    - But when running **scFormer/examples/perturbation/dev_perturb.py**, the actual `x.shape` is `(batch_size * n_genes, 1)`.
+    - So an error occurs in this line (https://github.com/bowang-lab/scFormer/blob/2df344a75e5f57cdfa296987786e040912d33935/examples/perturbation/dev_perturb.py#L230).
 
 <br>
 
