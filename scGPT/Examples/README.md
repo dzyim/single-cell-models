@@ -2,7 +2,7 @@
 
 
 
-# 2. Perturbation Prediction
+# 2. Perturbation Response Prediction
 
 ## Datasets
 
