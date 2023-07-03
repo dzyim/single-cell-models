@@ -17,7 +17,7 @@
 
 	- self.decoder [class **ExprDecoder**(nn.Module)]
 		- `mlm_output`, `mlm_zero_probs`
-	- self._get_cell_emb_from_layer [func]
+	- self._get_cell_emb_from_layer [method]
 		- `cell_emb`, `loss_ecs`
 	- self.cls_decoder [class **ClsDecoder**(nn.Module)]
 		- `cls_output`
@@ -43,7 +43,7 @@
 
 	- self.decoder [nn.**Linear**]
 		- `mlm_output`
-	- self._get_cell_emb_from_layer [func]
+	- self._get_cell_emb_from_layer [method]
 		- `cell_emb`, `loss_ecs`
 	- self.cls_decoder [class **ClsDecoder**(nn.Module)]
 		- `cls_output`
