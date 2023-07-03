@@ -23,6 +23,9 @@
 
 <br>
 
+- ![ECS loss](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2022/11/22/2022.11.20.517285/embed/graphic-10.gif)
+<br>
+
 2. **如何计算 masked MSE loss 和 elastic cell similarity loss ？**
 ```python
 import torch
@@ -63,5 +66,10 @@ def elastic_cell_similarity_loss(
 - `cce_weight` (default: 10)  # In the script, it's a magic value without a variable name
 - `ecs_weight` (default: 10)  # In the script, it's a magic value without a variable name
 
+<br>
+
+4. **scFormer/examples/perturbation/dev_perturb.py** 如何评估 perturbation 预测结果？
+
+![](https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285/T4.medium.gif)
 <br>
 
