@@ -6,6 +6,14 @@
 
 <br>
 
+## Graph Neural Network Models
+
+<br>
+
+- **GEARS (2022).** &emsp;&emsp;&emsp;&emsp;&nbsp; [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735) [[GitHub]](https://github.com/snap-stanford/GEARS) [[Lab]](http://snap.stanford.edu/) [[pdf]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735.full.pdf)
+
+<br>
+
 ## (Pretrained) Language Models
 
 <br>
