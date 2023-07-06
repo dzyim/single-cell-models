@@ -6,6 +6,17 @@
 
 <br>
 
+## Variational Autoencoders
+
+<br>
+
+- **scVI (2018).**
+- **scGen (2018).**
+- **VEGA (2020).**
+- **totalVI (2021).**
+
+<br>
+
 ## Graph Neural Network Models
 
 <br>
