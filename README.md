@@ -6,7 +6,7 @@
 
 <br>
 
-## Integrated Workflow
+## Integrated Methods
 <br>
 
 - **SCENIC (2017).** [[GitHub]](https://github.com/aertslab/SCENIC) [[pySCENIC]](https://github.com/aertslab/pySCENIC) [[Tutorials]](https://scenic.aertslab.org/tutorials/) single-cell regulatory network inference and clustering
@@ -20,7 +20,19 @@
   - pycisTopic. [[GitHub]](https://github.com/aertslab/pycisTopic)
   - pycistarget. [[GitHub]](https://github.com/aertslab/pycistarget)
   - create_cisTarget_databases. [[GitHub]](https://github.com/aertslab/create_cisTarget_databases)
-<!--  - pySCENIC. [[GitHub]](https://github.com/aertslab/pySCENIC) --->
+  <!--  - pySCENIC. [[GitHub]](https://github.com/aertslab/pySCENIC) --->
+
+- **scArches (2020).** [[Article]](https://www.nature.com/articles/s41587-021-01001-7) [[Docs]](https://docs.scarches.org/en/latest/about.html) [[GitHub]](https://github.com/theislab/scarches) Single-cell architecture surgery, a package for reference-based analysis of single-cell data
+  - scVI (Lopez et al., 2018)
+  - trVAE (Lotfollahi et al.,2020)
+  - scANVI (Xu et al., 2019)
+  - scGen (Lotfollahi et al., 2019)
+  - expiMap (Lotfollahi et al., 2023)
+  - totalVI (Gayoso al., 2019)
+  - treeArches (Michielsen et al., 2022)
+  - SageNet (Heidari et al., 2022)
+  - mvTCR (Drost et al., 2022)
+  - scPoli (De Donno et al., 2022)
 
 <br>
 
