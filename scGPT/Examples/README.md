@@ -53,3 +53,47 @@
 - [Project Report of First Try](https://api.wandb.ai/links/dzyim/sk2jamte)
 
 <br>
+
+### DataModule
+
+- [superclass] [class **gears.PertData**](https://github.com/dzyim/single-cell-models/tree/main/GEARS/PertData)
+
+- object methods:
+  - [x] \_\_init\_\_()
+  - [x] preprocess()
+  - [x] set_vocab()
+  - [x] reload_dataset()
+  - [x] get_gene_ids()
+  - [x] get_pert_flags()
+  - [x] get_tokenized_batch()
+
+  - [ ] create_dataset() [**Overriding**]
+  - [ ] get_dataloader() [**Overriding**]
+
+<br>
+
+### PertModel
+
+- Modified from `scgpt.model.TransformerModel`:
+
+  - `self.pert_encoder = nn.Embedding(3, d_model, padding_idx=pert_pad_id)`
+  - `total_embeddings = src + values + perts`
+
+<br>
+
+### PertTrainer
+
+- object methods:
+  - [x] \_\_init\_\_()
+  - [x] prepare_data()
+  - [x] prepare_model()
+  - [x] prepare_batch()
+  - [x] fit_epoch()
+  - [x] evaluate_epoch()
+  - [x] fit()
+  
+  - [ ] predict()
+  - [ ] plot_perturbation()
+  - [ ] eval_testdata()
+
+<br>
