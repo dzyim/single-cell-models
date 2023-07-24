@@ -16,7 +16,7 @@
 
 ## scGPT Example Code
 
-### Runtime error in `scFormer/examples/perturbation/dev_perturb.py`
+### Runtime error in [`scFormer/examples/perturbation/dev_perturb.py`](https://github.com/bowang-lab/scFormer/blob/main/examples/perturbation/dev_perturb.py)
 
 ![](https://raw.githubusercontent.com/dzyim/single-cell-models/main/scGPT/Examples/figures/dev_perturb.py.err.png)
 
@@ -26,7 +26,7 @@
 
 <br>
 
-### Runtime error in `scGPT/tutorials/Tutorial_Perturbation.ipynb`
+### Runtime error in [`scGPT/tutorials/Tutorial_Perturbation.ipynb`](https://github.com/bowang-lab/scGPT/blob/main/tutorials/Tutorial_Perturbation.ipynb)
 
 ![](https://raw.githubusercontent.com/dzyim/single-cell-models/main/scGPT/Examples/figures/tutorial_perturbation.py.err.png)
 
@@ -45,5 +45,11 @@
 "transformer_encoder.layers.9.self_attn.Wqkv.bias", "transformer_encoder.layers.10.self_attn.Wqkv.weight",
 "transformer_encoder.layers.10.self_attn.Wqkv.bias", "transformer_encoder.layers.11.self_attn.Wqkv.weight",
 "transformer_encoder.layers.11.self_attn.Wqkv.bias".`
+
+<br>
+
+## New Implementation
+
+- [Project Report of First Try](https://api.wandb.ai/links/dzyim/sk2jamte)
 
 <br>
