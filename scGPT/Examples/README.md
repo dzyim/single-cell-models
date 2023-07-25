@@ -59,16 +59,16 @@
 - [superclass] [class **gears.PertData**](https://github.com/dzyim/single-cell-models/tree/main/GEARS/PertData)
 
 - object methods:
-  - [x] \_\_init\_\_()
-  - [x] preprocess()
-  - [x] set_vocab()
-  - [x] reload_dataset()
-  - [x] get_gene_ids()
-  - [x] get_pert_flags()
-  - [x] get_tokenized_batch()
+  - [x] `__init__(self, data_path: Path|str, ctrl_flag: int, knockout_flag: int, **kwargs) -> None`
+  - [x] `preprocess(self, hvg: int|bool = 1200) -> None`
+  - [x] `set_vocab(self, vocab_file: Optional[Path, str] = None) -> None`
+  - [x] `reload_dataset(self) -> None`
+  - [x] `get_gene_ids(self) -> np.ndarray[int]`
+  - [x] `get_pert_flags(self, condition: str) -> Optional[np.ndarray[int]]`
+  - [x] `get_tokenized_batch(self, batch_data, append_cls: bool = False, include_zero_gene: bool = True) -> dict`
 
-  - [ ] create_dataset() [**Overriding**]
-  - [ ] get_dataloader() [**Overriding**]
+  - [ ] `create_dataset()` [**Overriding**]
+  - [ ] `get_dataloader()` [**Overriding**]
 
 <br>
 
@@ -84,16 +84,17 @@
 ### PertTrainer
 
 - object methods:
-  - [x] \_\_init\_\_()
-  - [x] prepare_data()
-  - [x] prepare_model()
-  - [x] prepare_batch()
-  - [x] fit_epoch()
-  - [x] evaluate_epoch()
-  - [x] fit()
+  - [x] `__init__(self, config: dict, max_epochs: int) -> None`
+  - [x] `prepare_data(self, data: PerturbData) -> None`
+  - [x] `prepare_model(self, model: nn.Module) -> None`
+  - [x] `prepare_batch(self, batch, append_cls: bool = False) -> dict`
+  - [x] `fit_epoch(self, epoch: int) -> None`
+  - [x] `evaluate_epoch(self, epoch: int) -> tuple[float]`
+  - [x] `fit(self) -> None`
   
-  - [x] predict_batch()
-  - [ ] plot_perturbation()
-  - [x] eval_testdata()
+  - [x] `predict_batch(self, batch_data, include_zero_gene: str|bool = "batch-wise", amp: bool = True) -> Optional[torch.Tensor]`
+  - [ ] `plot_perturbation()`
+  - [x] `eval_perturb(self, loader: DataLoader) -> dict`
+  - [x] `eval_testdata(self) -> None`
 
 <br>
