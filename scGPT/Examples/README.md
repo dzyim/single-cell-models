@@ -92,8 +92,8 @@
   - [x] evaluate_epoch()
   - [x] fit()
   
-  - [ ] predict()
+  - [x] predict_batch()
   - [ ] plot_perturbation()
-  - [ ] eval_testdata()
+  - [x] eval_testdata()
 
 <br>
