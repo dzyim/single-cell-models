@@ -80,3 +80,18 @@ def elastic_cell_similarity_loss(
 - DAR: Domain Adaptation by Reverse Backpropagation
 
 <br>
+
+## Fine-tuning for Perturbation Response Prediction
+
+1. Perturbation response prediction 任务（下面称为“任务”）的微调过程，所输入的 Norman et al., Adamson et al., ... 等数据集的基因表达值是如何预处理的？
+
+<br>
+
+2. 任务所用数据集中，以及 gears.PertData 中的差异表达基因（DE genes）是如何计算出的？
+
+<br>
+
+3. 任务所用数据集的“Ctrl”数据和“Perturbed”数据中，大致多少基因表达值为零值？多少基因在Perturbation前后有显著变化？一个基因在“Ctrl”或“Perturbed”组内的表达值的方差有多大？
+
+<br>
+
