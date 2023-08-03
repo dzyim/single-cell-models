@@ -2,7 +2,7 @@
 
 <br>
 
-## Q&A
+## Fine-tuning for Batch Correction
 
 1. **在 scGPT/examples/finetune_integration.py 模型训练中，存在哪些损失函数？**
 - `loss_mse`: *masked MSE loss* between `mlm_output` and `target_values` （表达量水平）
@@ -59,7 +59,12 @@ def elastic_cell_similarity_loss(
 
 <br>
 
-4. **`mlm_output`, `mvc_output`, `dab_output` 等缩写，分别是什么意思？**
+4. **scGPT/examples/finetune_integration.py 的损失函数计算，选择什么作为预测值和真实值？**
+- For each input cell, a subset of gene tokens and their corresponding expression values are randomly *masked*. scGPT is optimized to predict the expression values at the *masked* positions.
+
+<br>
+
+5. **`mlm_output`, `mvc_output`, `dab_output` 等缩写，分别是什么意思？**
 - MLM: Masked Language Modelling
 - MGM: Masked Gene Modelling
 - MVC: Masked Value Prediction for Cell Embedding
@@ -71,7 +76,7 @@ def elastic_cell_similarity_loss(
 
 <br>
 
-5. **scFormer 和 scGPT 的 Transformer 模型有哪些 task heads？**
+6. **scFormer 和 scGPT 的 Transformer 模型有哪些 task heads？**
 
 ![scFormer Fig. 1](https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285/F1.large.jpg)
 - MGM: Masked Gene Modelling
