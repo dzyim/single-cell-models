@@ -54,21 +54,32 @@
 
 <br>
 
-### DataModule
+### PertDataset
+- [superclass] [class **torch.utils.data.Dataset**](https://github.com/pytorch/pytorch/blob/main/torch/utils/data/dataset.py)
+
+- object methods:
+
+  - [x] `__init__(self, x: AnnData, y: AnnData) -> None`
+  - [x] `__getitem__(self, idx: int) -> dict[str, dict[str, np.ndarray; str, dict]]`
+  - [x] `__len__(self) -> int`
+
+<br>
+
+### PerturbData
 
 - [superclass] [class **gears.PertData**](https://github.com/dzyim/single-cell-models/tree/main/GEARS/PertData)
 
 - object methods:
-  - [x] `__init__(self, data_path: Path|str, ctrl_flag: int, knockout_flag: int, **kwargs) -> None`
-  - [x] `preprocess(self, hvg: int|bool = 1200) -> None`
-  - [x] `set_vocab(self, vocab_file: Optional[Path, str] = None) -> None`
-  - [x] `reload_dataset(self) -> None`
+  - [x] `__init__(self, data_path: Path|str, ctrl_flag: int, crispr_flag: int, **kwargs) -> None`
+  - [x] `preprocess(self, hvg: int|bool = 1200) -> None` [Using `gears.data_utils.get_DE_genes`, `gears.data_utils.get_dropout_non_zero_genes`]
+  - [x] `set_vocab(self, vocab_file: Path|str|None = None) -> None`
+  - [x] `reload_dataset(self) -> None` [**Deprecated**]
   - [x] `get_gene_ids(self) -> np.ndarray[int]`
   - [x] `get_pert_flags(self, condition: str) -> Optional[np.ndarray[int]]`
-  - [x] `get_tokenized_batch(self, batch_data, append_cls: bool = False, include_zero_gene: bool = True) -> dict`
+  - [ ] `get_tokenized_batch(self, batch_data, append_cls: bool = False, include_zero_gene: bool = True) -> dict`
 
-  - [ ] `create_dataset()` [**Overriding**]
-  - [ ] `get_dataloader()` [**Overriding**]
+  - [x] `create_dataset(self) -> None` [**Overriding**]
+  - [x] `get_dataloader(self, batch_size: int, test_batch_size: Optional[int] = None) -> None` [**Overriding**]
 
 <br>
 
