@@ -59,10 +59,33 @@
 
 - object methods:
 
-  - [x] `__init__(self, x: AnnData, y: AnnData) -> None`
-  - [x] `__getitem__(self, idx: int) -> dict[str, dict[str, np.ndarray; str, dict]]`
-  - [x] `__len__(self) -> int`
+  - [x] `def __init__(self, x: AnnData, y: AnnData) -> None`
+  
+  ```python
+        assert len(x) == len(y)
+        self.x: AnnData = x
+        self.y: AnnData = y
+        self.var = y.var.copy()
+        self.uns = y.uns.copy()
+  ```
+  
+  - [x] `def __getitem__(self, idx: int) -> dict[str, dict[str, np.ndarray; str, dict]]`
 
+  ```python
+        x_ = self.x[idx]
+        y_ = self.y[idx]
+        return {
+            'x': {'X': x_.X.A, 'obs': x_.obs.reset_index().to_dict('list')},
+            'y': {'X': y_.X.A, 'obs': y_.obs.reset_index().to_dict('list')},
+        }
+  ```
+  
+  - [x] `def __len__(self) -> int`
+
+  ```python
+        return len(self.y)
+  ```
+  
 <br>
 
 ### PerturbData
@@ -70,7 +93,7 @@
 - [superclass] [class **gears.PertData**](https://github.com/dzyim/single-cell-models/tree/main/GEARS/PertData)
 
 - object methods:
-  - [x] `__init__(self, data_path: Path|str, ctrl_flag: int, crispr_flag: int, **kwargs) -> None`
+  - [x] `__init__(self, data_path: Path|str, ctrl_flag: int, crispr_flag: int, pert_pad_id: int, **kwargs) -> None`
   - [x] `preprocess(self, hvg: int|bool = 1200) -> None` [Using `gears.data_utils.get_DE_genes`, `gears.data_utils.get_dropout_non_zero_genes`]
   - [x] `set_vocab(self, vocab_file: Path|str|None = None) -> None`
   - [x] `reload_dataset(self) -> None` [**Deprecated**]
