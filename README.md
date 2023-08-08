@@ -9,20 +9,20 @@
 ## Integrated Methods
 <br>
 
-- **SCENIC (2017).** [[GitHub]](https://github.com/aertslab/SCENIC) [[pySCENIC]](https://github.com/aertslab/pySCENIC) [[Tutorials]](https://scenic.aertslab.org/tutorials/) single-cell regulatory network inference and clustering
+- **SCENIC (2017).** [[GitHub]](https://github.com/aertslab/SCENIC) [[Lab]](https://aertslab.org/) [[pySCENIC]](https://github.com/aertslab/pySCENIC) [[Tutorials]](https://scenic.aertslab.org/tutorials/) single-cell regulatory network inference and clustering
   - GENIE3. [[GitHub]](https://github.com/aertslab/GENIE3) [[Bioconductor]](https://bioconductor.org/packages/devel/bioc/html/GENIE3.html) [[Vignette]](https://bioconductor.org/packages/release/bioc/vignettes/GENIE3/inst/doc/GENIE3.html)
   - GRNBoost. [[GitHub]](https://github.com/aertslab/GRNBoost)
   - RcisTarget. [[GitHub]](https://github.com/aertslab/RcisTarget) [[Bioconductor]](https://bioconductor.org/packages/release/bioc/html/RcisTarget.html) [[Vignette]](https://bioconductor.org/packages/release/bioc/vignettes/RcisTarget/inst/doc/RcisTarget_MainTutorial.html)
   - AUCell. [[GitHub]](https://github.com/aertslab/AUCell) [[Bioconductor]](https://bioconductor.org/packages/release/bioc/html/AUCell.html) [[Vignette]](https://bioconductor.org/packages/release/bioc/vignettes/AUCell/inst/doc/AUCell.html)
 
-- **SCENIC+ (2023).** [[GitHub]](https://github.com/aertslab/scenicplus) [[Tutorials]](https://scenicplus.readthedocs.io/en/latest/tutorials.html) single-cell multiomic inference of enhancers and gene regulatory networks
+- **SCENIC+ (2023).** [[GitHub]](https://github.com/aertslab/scenicplus) [[Lab]](https://aertslab.org/) [[Tutorials]](https://scenicplus.readthedocs.io/en/latest/tutorials.html) single-cell multiomic inference of enhancers and gene regulatory networks
   - LoomXpy. [[GitHub]](https://github.com/aertslab/LoomXpy)
   - pycisTopic. [[GitHub]](https://github.com/aertslab/pycisTopic)
   - pycistarget. [[GitHub]](https://github.com/aertslab/pycistarget)
   - create_cisTarget_databases. [[GitHub]](https://github.com/aertslab/create_cisTarget_databases)
   <!--  - pySCENIC. [[GitHub]](https://github.com/aertslab/pySCENIC) --->
 
-- **scArches (2020).** [[Article]](https://www.nature.com/articles/s41587-021-01001-7) [[Docs]](https://docs.scarches.org/en/latest/about.html) [[GitHub]](https://github.com/theislab/scarches) Single-cell architecture surgery, a package for reference-based analysis of single-cell data
+- **scArches (2020).** [[Article]](https://www.nature.com/articles/s41587-021-01001-7) [[Docs]](https://docs.scarches.org/en/latest/about.html) [[GitHub]](https://github.com/theislab/scarches) [[Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://www.nature.com/articles/s41587-021-01001-7.pdf) Single-cell architecture surgery, a package for reference-based analysis of single-cell data
   - scVI (Lopez et al., 2018)
   - trVAE (Lotfollahi et al.,2020)
   - scANVI (Xu et al., 2019)
