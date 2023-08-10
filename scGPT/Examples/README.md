@@ -85,9 +85,10 @@
   - [x] `def __init__(self, x: AnnData, y: AnnData) -> None`
   
   ```python
-        assert len(x) == len(y)
-        self.x: AnnData = x
-        self.y: AnnData = y
+        assert x.shape == y.shape
+        self.x = x
+        self.y = y
+        self.shape = y.shape
         self.var = y.var.copy()
         self.uns = y.uns.copy()
   ```
@@ -98,15 +99,21 @@
         x_ = self.x[idx]
         y_ = self.y[idx]
         return {
-            'x': {'X': x_.X.A, 'obs': x_.obs.reset_index().to_dict('list')},
-            'y': {'X': y_.X.A, 'obs': y_.obs.reset_index().to_dict('list')},
+            'x': {
+                'X': x_.X.A.reshape(x_.n_vars),
+                'obs': x_.obs.reset_index().to_dict('records')[0]
+            },
+            'y': {
+                'X': y_.X.A.reshape(y_.n_vars),
+                'obs': y_.obs.reset_index().to_dict('records')[0]
+            },
         }
   ```
   
   - [x] `def __len__(self) -> int`
 
   ```python
-        return len(self.y)
+        return self.shape[0]
   ```
   
 <br>
