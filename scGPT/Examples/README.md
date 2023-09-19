@@ -12,19 +12,19 @@
 
 ## Datasets
 
-- **Dixit et al, 2016.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(16)31610-5) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154416) [[Lab]](https://www.broadinstitute.org/regev-lab)
+- **Dixit et al, 2016.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(16)31610-5) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154416) [[Lab]](https://www.broadinstitute.org/regev-lab) [[pdf]](https://www.cell.com/action/showPdf?pii=S0092-8674%2816%2931610-5)
 
-- **Adamson et al, 2016.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(16)31660-9) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154417) [[Lab]](https://weissman.wi.mit.edu/)
+- **Adamson et al, 2016.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(16)31660-9) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154417) [[Lab]](https://weissman.wi.mit.edu/) [[pdf]](https://www.cell.com/action/showPdf?pii=S0092-8674%2816%2931660-9)
   - **Direction of perturbations:** CRISPRi (gene knockdown)
   - **Number of perturbed genes:** one-gene perturbations
   - **Cell type:** K562
 
-- **Norman et al, 2019.** [[Article]](https://www.science.org/doi/10.1126/science.aax4438) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/601096) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154020) [[Lab]](https://weissman.wi.mit.edu/)
+- **Norman et al, 2019.** [[Article]](https://www.science.org/doi/10.1126/science.aax4438) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/601096) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154020) [[Lab]](https://weissman.wi.mit.edu/) [[pdf]](https://www.science.org/doi/pdf/10.1126/science.aax4438?download=false)
   - **Direction of perturbations:** CRISPRa (gene activation)
   - **Number of perturbed genes:** one-gene perturbations and two-gene perturbations
   - **Cell type:** K562
 
-- **Papalexi et al, 2021.** [[Article]](https://www.nature.com/articles/s41588-021-00778-2) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.06.28.175596) [[Lab]](https://satijalab.org/) [[Vignette]](https://satijalab.org/seurat/articles/mixscape_vignette.html)
+- **Papalexi et al, 2021.** [[Article]](https://www.nature.com/articles/s41588-021-00778-2) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.06.28.175596) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153056) [[Lab]](https://satijalab.org/) [[Vignette]](https://satijalab.org/seurat/articles/mixscape_vignette.html)
 
 <br>
 
@@ -131,7 +131,7 @@
   - [x] `reload_dataset(self) -> None` [**Deprecated**]
   - [x] `get_gene_ids(self) -> np.ndarray[int]`
   - [x] `get_pert_flags(self, condition: str) -> Optional[np.ndarray[int]]`
-  - [ ] `get_tokenized_batch(self, batch_data, append_cls: bool = False, include_zero_gene: bool = True) -> dict`
+  - [x] `get_tokenized_batch(self, batch_data, max_len: int = 0, append_cls: bool = False, include_zero_gene: bool = True) -> dict[str, torch.Tensor]`
 
   - [x] `create_dataset(self) -> None` [**Overriding**]
   ```python
@@ -159,14 +159,14 @@
   - [x] `__init__(self, config: dict, max_epochs: int) -> None`
   - [x] `prepare_data(self, data: PerturbData) -> None`
   - [x] `prepare_model(self, model: nn.Module) -> None`
-  - [x] `prepare_batch(self, batch, append_cls: bool = False) -> dict`
+  - [x] `prepare_batch(self, batch, append_cls: bool = False) -> dict[str, torch.Tensor]`
   - [x] `fit_epoch(self, epoch: int) -> None`
   - [x] `evaluate_epoch(self, epoch: int) -> tuple[float]`
   - [x] `fit(self) -> None`
   
-  - [x] `predict_batch(self, batch_data, include_zero_gene: str|bool = "batch-wise", amp: bool = True) -> Optional[torch.Tensor]`
-  - [ ] `plot_perturbation()`
-  - [x] `predict_perturb(self, loader: DataLoader) -> dict`
+  - [x] `predict_batch(self, batch_data, include_zero_gene: str|bool = True) -> dict[str, torch.Tensor]`
+  - [x] `plot_perturb(self, query: str, pool_size: int = None, save_file: Path = None) -> None`
+  - [x] `eval_perturb(self, loader: DataLoader) -> dict[str, numpy.ndarray]`
   - [x] `eval_testdata(self) -> None`
 
 <br>
