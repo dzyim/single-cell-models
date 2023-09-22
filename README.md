@@ -101,3 +101,12 @@
 - **scFoundation (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.05.29.542705) [[GitHub]](https://github.com/biomap-research/scFoundation) [[Lab]](https://www.biomap.com/) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.05.29.542705.full.pdf) large scale foundation model on single-cell transcriptomics
 
 <br>
+
+## Appendix: Technologies
+<br>
+
+<img src="https://www.singlecellcourse.org/figures/moores-law.png" width="80%">
+
+Figure 1: Scaling of scRNA-seq experiments (image from [Svensson et al.](https://arxiv.org/pdf/1704.01379.pdf))
+
+<br>
