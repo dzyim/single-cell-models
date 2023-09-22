@@ -18,8 +18,11 @@
 ## Datasets
 <br>
 
-- **Human Cell Atlas** [[Home]](https://www.humancellatlas.org/) [[Data Portal]](https://data.humancellatlas.org/)
-- **CZ CELLxGENE** [[Home]](https://cellxgene.cziscience.com/) [[Census package]](https://chanzuckerberg.github.io/cellxgene-census/index.html) [[Census R package]](https://chanzuckerberg.github.io/cellxgene-census/r/index.html)
+- **Human Cell Atlas** [[Home]](https://www.humancellatlas.org/) [[Data Portal]](https://data.humancellatlas.org/) [[paper]](https://elifesciences.org/articles/27041) [[pdf]](https://cdn.elifesciences.org/articles/27041/elife-27041-v2.pdf)
+  - **Human Developmental Cell Atlas** [[UK Team]](https://www.hdbr.org/) [[Sweden Team]](https://hdca-sweden.scilifelab.se/) [[Roadmap]](https://www.nature.com/articles/s41586-021-03620-1)
+
+- **CZ CELLxGENE** [[Home]](https://cellxgene.cziscience.com/) [[CellGuide]](https://cellxgene.cziscience.com/cellguide) [[Census package]](https://chanzuckerberg.github.io/cellxgene-census/index.html) [[Census R package]](https://chanzuckerberg.github.io/cellxgene-census/r/index.html)
+  - **Tabula Sapiens** [[Home]](https://tabula-sapiens-portal.ds.czbiohub.org/) [[Data]](https://tabula-sapiens-portal.ds.czbiohub.org/whereisthedata) [[paper]](https://www.science.org/stoken/author-tokens/ST-495/full) [[pdf]](https://www.science.org/doi/pdf/10.1126/science.abl4896)
 
 <br>
 
@@ -77,7 +80,7 @@
 - **VEGA (2020).** [[Article]](https://www.nature.com/articles/s41467-021-26017-0) [[Docs]](https://vega-documentation.readthedocs.io/en/latest/index.html) [[GitHub]](https://github.com/LucasESBS/vega) VAE Enhanced by Gene Annotations
 - **totalVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.nature.com/articles/s41592-020-01050-x) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) Total Variational Inference
 - **scANVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.embopress.org/doi/full/10.15252/msb.20209620) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) single-cell ANnotation using Variational Inference
-- **CPA (2021).** [[Article]](https://www.embopress.org/doi/full/10.15252/msb.202211517) [[GitHub1]](https://github.com/facebookresearch/CPA) [[GitHub2]](https://github.com/theislab/cpa) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://www.embopress.org/doi/pdfdirect/10.15252/msb.202211517?download=false) The Compositional Perturbation Autoencoder learns effects of perturbations at the single-cell level.
+- **CPA (2021).** [[Article]](https://www.embopress.org/doi/full/10.15252/msb.202211517) [[GitHub1]](https://github.com/facebookresearch/CPA) [[GitHub2]](https://github.com/theislab/cpa) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://www.embopress.org/doi/pdfdirect/10.15252/msb.202211517) The Compositional Perturbation Autoencoder learns effects of perturbations at the single-cell level.
 
 <br>
 
