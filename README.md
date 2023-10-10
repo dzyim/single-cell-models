@@ -91,6 +91,14 @@
 
 <br>
 
+## Gene Regulatory Networks
+<br>
+
+- **CellPolaris (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244) [[GitHub]](https://github.com/xCompass-AI/CellPolaris) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244.full.pdf) Decoding Cell Fate through Generalization Transfer Learning of Gene Regulatory Networks
+- **GeneCompass (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542) [[GitHub]](https://github.com/xCompass-AI/GeneCompass) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542.full.pdf) Deciphering Universal Gene Regulatory Mechanisms with Knowledge-Informed Cross-Species Foundation Model
+
+<br>
+
 ## (Pretrained) Language Models
 <br>
 
