@@ -7,7 +7,6 @@
 <br>
 
 ## Books
-<br>
 
 - **Orchestrating Single-Cell Analysis with Bioconductor** https://bioconductor.org/books/release/OSCA/
 - **Analysis of single cell RNA-seq data** https://www.singlecellcourse.org/
@@ -16,7 +15,6 @@
 <br>
 
 ## Datasets
-<br>
 
 - **Human Cell Atlas** [[Home]](https://www.humancellatlas.org/) [[Data Portal]](https://data.humancellatlas.org/) [[paper]](https://elifesciences.org/articles/27041) [[pdf]](https://cdn.elifesciences.org/articles/27041/elife-27041-v2.pdf)
   - **Human Developmental Cell Atlas** [[UK Team]](https://www.hdbr.org/) [[Sweden Team]](https://hdca-sweden.scilifelab.se/) [[Roadmap]](https://www.nature.com/articles/s41586-021-03620-1)
@@ -27,7 +25,6 @@
 <br>
 
 ## Early Methods
-<br>
 
 - **limma (2003).** [[Home]](https://bioinf.wehi.edu.au/limma/) [[Article]](https://www.sciencedirect.com/science/article/abs/pii/S1046202303001555) [[Bioconductor]](https://www.bioconductor.org/packages/release/bioc/html/limma.html) Linear Models for Microarray and RNA-seq Data
 - **ComBat (2007).** [[Article1]](https://academic.oup.com/biostatistics/article/8/1/118/252073) [[Article2]](https://academic.oup.com/nargab/article/2/3/lqaa078/5909519) [[GitHub]](https://github.com/zhangyuqing/ComBat-seq) removing known batch effects using empirical Bayes frameworks
@@ -42,7 +39,6 @@
 <br>
 
 ## Integrated Methods
-<br>
 
 - **SCENIC (2017).** [[Home]](https://scenic.aertslab.org/) [[GitHub]](https://github.com/aertslab/SCENIC) [[Lab]](https://aertslab.org/) [[pySCENIC]](https://github.com/aertslab/pySCENIC) [[Tutorials]](https://scenic.aertslab.org/tutorials/) single-cell regulatory network inference and clustering
   - GENIE3. [[GitHub]](https://github.com/aertslab/GENIE3) [[Bioconductor]](https://bioconductor.org/packages/devel/bioc/html/GENIE3.html) [[Vignette]](https://bioconductor.org/packages/release/bioc/vignettes/GENIE3/inst/doc/GENIE3.html)
@@ -72,7 +68,6 @@
 <br>
 
 ## Variational Autoencoders
-<br>
 
 - **scVI (2018).** [[Home]](https://scverse.org/) [[Article]](https://www.nature.com/articles/s41592-018-0229-2) [[GitHub]](https://github.com/scverse/scvi-tools) [[Guide]](https://docs.scvi-tools.org/en/stable/user_guide/index.html) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) single-cell variational inference tools
 - **scGen (2018).** [[Article]](https://www.nature.com/articles/s41592-019-0494-8) [[Docs]](https://scgen.readthedocs.io/en/stable/) [[GitHub]](https://github.com/theislab/scgen) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://rdcu.be/bMlbD) single cell perturbation prediction
@@ -85,22 +80,12 @@
 <br>
 
 ## Graph Neural Network Models
-<br>
 
 - **GEARS (2022).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735) [[GitHub]](https://github.com/snap-stanford/GEARS) [[Lab]](http://snap.stanford.edu/) [[pdf]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735.full.pdf) a geometric deep learning model that predicts outcomes of novel multi-gene perturbations
 
 <br>
 
-## Gene Regulatory Networks
-<br>
-
-- **CellPolaris (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244) [[GitHub]](https://github.com/xCompass-AI/CellPolaris) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244.full.pdf) Decoding Cell Fate through Generalization Transfer Learning of Gene Regulatory Networks
-- **GeneCompass (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542) [[GitHub]](https://github.com/xCompass-AI/GeneCompass) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542.full.pdf) Deciphering Universal Gene Regulatory Mechanisms with Knowledge-Informed Cross-Species Foundation Model
-
-<br>
-
-## (Pretrained) Language Models
-<br>
+## (Pretrained) Foundation Models
 
 - **scBERT (2021).** [[Article]](https://www.nature.com/articles/s42256-022-00534-z) [[GitHub]](https://github.com/TencentAILabHealthcare/scBERT) [[Lab]](https://ai.tencent.com/ailab) [[pdf]](https://www.nature.com/articles/s42256-022-00534-z.pdf) a large-scale pretrained deep language model for cell type annotation
 - **scFormer (2022).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2022.11.20.517285) [[GitHub]](https://github.com/bowang-lab/scFormer) [[Lab]](https://wanglab.ml/) [[pdf]](https://www.biorxiv.org/content/10.1101/2022.11.20.517285.full.pdf) a universal representation learning approach for single-cell data using transformers
@@ -109,7 +94,15 @@
 - **scFoundation (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.05.29.542705) [[GitHub]](https://github.com/biomap-research/scFoundation) [[Lab]](https://www.biomap.com/) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.05.29.542705.full.pdf) large scale foundation model on single-cell transcriptomics
 - **GET (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.24.559168) [[Lab]](https://sailing-lab.github.io/) a foundation model of transcription across human cell types
 - **CellPLM (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.10.03.560734) [[GitHub]](https://github.com/OmicsML/CellPLM) [[Lab]](https://dse.cse.msu.edu/) Pre-training of Cell Language Model Beyond Single Cells
+- **CellPolaris (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244) [[GitHub]](https://github.com/xCompass-AI/CellPolaris) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244.full.pdf) Decoding Cell Fate through Generalization Transfer Learning of Gene Regulatory Networks
+- **GeneCompass (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542) [[GitHub]](https://github.com/xCompass-AI/GeneCompass) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542.full.pdf) Deciphering Universal Gene Regulatory Mechanisms with Knowledge-Informed Cross-Species Foundation Model
+- **Geneformer (2023).** [[Article]](https://www.nature.com/articles/s41586-023-06139-9) [[HuggingFace]](https://huggingface.co/ctheodoris/Geneformer) [[Lab]](https://www.ellinorlab.org/) [[pdf]](https://cqb.pku.edu.cn/zenglab_cn/pdf/s41586-023-06139-9.pdf) Transfer learning enables predictions in network biology
 
+<br>
+
+## Related Lists
+
+- https://github.com/OmicsML/awesome-foundation-model-single-cell-papers
 
 <br>
 
