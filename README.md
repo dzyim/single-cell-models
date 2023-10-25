@@ -100,6 +100,14 @@
 
 <br>
 
+## Benchmarks
+
+- **A benchmark of batch-effect correction methods for single-cell RNA sequencing data. (2020)** [[Article]](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1850-9) [[GitHub]](https://github.com/JinmiaoChenLab/Batch-effect-removal-benchmarking) [[pdf]](https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-019-1850-9.pdf)
+- **Benchmarking atlas-level data integration in single-cell genomics. (2022)** [[Article]](https://www.nature.com/articles/s41592-021-01336-8) [[GitHub]](https://github.com/theislab/scib-reproducibility) [[pipeline]](https://github.com/theislab/scib-pipeline) [[pdf]](https://www.nature.com/articles/s41592-021-01336-8.pdf)
+- **Microsoft/zero-shot-scfoundation** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.10.16.561085) [[GitHub]](https://github.com/microsoft/zero-shot-scfoundation) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.10.16.561085.full.pdf)
+
+<br>
+
 ## Related Lists
 
 - https://github.com/OmicsML/awesome-foundation-model-single-cell-papers
