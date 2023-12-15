@@ -76,6 +76,7 @@
 - **totalVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.nature.com/articles/s41592-020-01050-x) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) Total Variational Inference
 - **scANVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.embopress.org/doi/full/10.15252/msb.20209620) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) single-cell ANnotation using Variational Inference
 - **CPA (2021).** [[Article]](https://www.embopress.org/doi/full/10.15252/msb.202211517) [[GitHub1]](https://github.com/facebookresearch/CPA) [[GitHub2]](https://github.com/theislab/cpa) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://www.embopress.org/doi/pdfdirect/10.15252/msb.202211517) The Compositional Perturbation Autoencoder learns effects of perturbations at the single-cell level.
+- **chemCPA (2022).** [[Article]](https://neurips.cc/virtual/2022/poster/53227) [[GitHub]](https://github.com/theislab/chemcpa) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://openreview.net/pdf?id=vRrFVHxFiXJ) Predicting Cellular Responses to Novel Drug Perturbations at a Single-Cell Resolution.
 
 <br>
 
