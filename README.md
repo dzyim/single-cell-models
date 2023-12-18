@@ -24,6 +24,31 @@
 
 <br>
 
+## Perturb-seq Datasets
+
+- **Dixit et al, 2016.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(16)31610-5) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154416) [[Lab]](https://www.broadinstitute.org/regev-lab) [[pdf]](https://www.cell.com/action/showPdf?pii=S0092-8674%2816%2931610-5)
+
+- **Adamson et al, 2016.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(16)31660-9) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154417) [[Lab]](https://weissman.wi.mit.edu/) [[pdf]](https://www.cell.com/action/showPdf?pii=S0092-8674%2816%2931660-9)
+  - **Direction of perturbations:** CRISPRi (gene knockdown)
+  - **Number of perturbed genes:** one-gene perturbations
+  - **Cell type:** K562
+
+- **Norman et al, 2019.** [[Article]](https://www.science.org/doi/10.1126/science.aax4438) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/601096) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344) [[Harvard Dataverse]](https://dataverse.harvard.edu/api/access/datafile/6154020) [[Lab]](https://weissman.wi.mit.edu/) [[pdf]](https://www.science.org/doi/pdf/10.1126/science.aax4438?download=false)
+  - **Direction of perturbations:** CRISPRa (gene activation)
+  - **Number of perturbed genes:** one-gene perturbations and two-gene perturbations
+  - **Cell type:** K562
+
+- **Papalexi et al, 2021.** [[Article]](https://www.nature.com/articles/s41588-021-00778-2) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.06.28.175596) [[GEO]](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153056) [[Lab]](https://satijalab.org/) [[Vignette]](https://satijalab.org/seurat/articles/mixscape_vignette.html)
+
+- **Replogle et al, 2023.** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(22)00597-9) [[Data Portal]](https://gwps.wi.mit.edu/) [[GitHub1]](https://github.com/josephreplogle/guide_calling) [[GitHub2]](https://github.com/thomasmaxwellnorman/perturbseq_demo) [[pdf]](https://www.cell.com/action/showPdf?pii=S0092-8674%2822%2900597-9)
+
+<br>
+
+### Collection
+- **scPerturb.org** Single Cell Perturbation Datasets [[Home]](https://scperturb.org) [[GitHub]](https://github.com/sanderlab/scPerturb)
+
+<br>
+
 ## Early Methods
 
 - **limma (2003).** [[Home]](https://bioinf.wehi.edu.au/limma/) [[Article]](https://www.sciencedirect.com/science/article/abs/pii/S1046202303001555) [[Bioconductor]](https://www.bioconductor.org/packages/release/bioc/html/limma.html) Linear Models for Microarray and RNA-seq Data
