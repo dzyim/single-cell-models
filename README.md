@@ -98,6 +98,7 @@
 - **CellPolaris (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244) [[GitHub]](https://github.com/xCompass-AI/CellPolaris) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.25.559244.full.pdf) Decoding Cell Fate through Generalization Transfer Learning of Gene Regulatory Networks
 - **GeneCompass (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542) [[GitHub]](https://github.com/xCompass-AI/GeneCompass) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.09.26.559542.full.pdf) Deciphering Universal Gene Regulatory Mechanisms with Knowledge-Informed Cross-Species Foundation Model
 - **Geneformer (2023).** [[Article]](https://www.nature.com/articles/s41586-023-06139-9) [[HuggingFace]](https://huggingface.co/ctheodoris/Geneformer) [[Lab]](https://www.ellinorlab.org/) [[pdf]](https://cqb.pku.edu.cn/zenglab_cn/pdf/s41586-023-06139-9.pdf) Transfer learning enables predictions in network biology
+- **UCE (2023).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2023.11.28.568918) [[GitHub]](https://github.com/snap-stanford/UCE) [[Lab]](http://snap.stanford.edu/) [[pdf]](https://www.biorxiv.org/content/10.1101/2023.11.28.568918.full.pdf) Universal Cell Embeddings: A Foundation Model for Cell Biology
 
 <br>
 
