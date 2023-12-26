@@ -6,7 +6,7 @@
 
 <br>
 
-## Books
+## Basics
 
 - **Orchestrating Single-Cell Analysis with Bioconductor** https://bioconductor.org/books/release/OSCA/
 - **Analysis of single cell RNA-seq data** https://www.singlecellcourse.org/
@@ -92,17 +92,25 @@
 
 <br>
 
+## Convolutional Neural Networks
+
+- **scBasset (2021).** [[Article]](https://www.nature.com/articles/s41592-022-01562-8) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2021.09.08.459495) [[GitHub]](https://github.com/calico/scBasset) [[Calico Labs]](https://www.calicolabs.com/) Sequence-based modeling of single cell ATAC-seq using convolutional neural networks
+
+<br>
+
 ## Variational Autoencoders
 
-- **scVI (2018).** [[Home]](https://scverse.org/) [[Article]](https://www.nature.com/articles/s41592-018-0229-2) [[GitHub]](https://github.com/scverse/scvi-tools) [[Guide]](https://docs.scvi-tools.org/en/stable/user_guide/index.html) [[Lab]](https://yoseflab.github.io/) Single-cell variational inference tools
+- **scVI (2018).** [[Home]](https://scverse.org/) [[Article]](https://www.nature.com/articles/s41592-018-0229-2) [[GitHub]](https://github.com/scverse/scvi-tools) [[Guide]](https://docs.scvi-tools.org/en/stable/user_guide/index.html) [[Yosef Lab]](https://yoseflab.github.io/) Single-cell variational inference tools
 - **scGen (2018).** [[Article]](https://www.nature.com/articles/s41592-019-0494-8) [[Docs]](https://scgen.readthedocs.io/en/stable/) [[GitHub]](https://github.com/theislab/scgen) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://rdcu.be/bMlbD) Single cell perturbation prediction
 - **trVAE (2019).** [[Article]](https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055927) [[GitHub]](https://github.com/theislab/trVAE) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) Conditional out-of-distribution prediction using transfer VAE
+- **scANVI (2019).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.embopress.org/doi/full/10.15252/msb.20209620) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/532895) [[GitHub]](https://github.com/scverse/scvi-tools/blob/main/scvi/model/_scanvi.py) [[Yosef Lab]](https://yoseflab.github.io/) single-cell ANnotation using Variational Inference
 - **VEGA (2020).** [[Article]](https://www.nature.com/articles/s41467-021-26017-0) [[Docs]](https://vega-documentation.readthedocs.io/en/latest/index.html) [[GitHub]](https://github.com/LucasESBS/vega) VAE Enhanced by Gene Annotations
-- **totalVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.nature.com/articles/s41592-020-01050-x) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) Total Variational Inference
-- **scANVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.embopress.org/doi/full/10.15252/msb.20209620) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) single-cell ANnotation using Variational Inference
+- **totalVI (2020).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.nature.com/articles/s41592-020-01050-x) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.05.08.083337) [[GitHub]](https://github.com/scverse/scvi-tools/blob/main/scvi/model/_totalvi.py) [[Yosef Lab]](https://yoseflab.github.io/) Total Variational Inference
+- **PeakVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.sciencedirect.com/science/article/pii/S2667237522000376) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2021.04.29.442020) [[GitHub]](https://github.com/scverse/scvi-tools/blob/main/scvi/model/_peakvi.py) [[Yosef Lab]](https://yoseflab.github.io/) [[pdf]](https://www.sciencedirect.com/science/article/pii/S2667237522000376/pdf) A Deep Generative Model for Single Cell Chromatin Accessibility Analysis
+- **MultiVI (2021).** [[Home]](https://scvi-tools.org/) [[Article]](https://www.nature.com/articles/s41592-023-01909-9) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2021.08.20.457057) [[GitHub]](https://github.com/scverse/scvi-tools/blob/main/scvi/model/_multivi.py) [[Yosef Lab]](https://yoseflab.github.io/) [[pdf]](https://www.nature.com/articles/s41592-023-01909-9.pdf) A deep generative model for the integration of multimodal data
 - **CPA (2021).** [[Article]](https://www.embopress.org/doi/full/10.15252/msb.202211517) [[GitHub1]](https://github.com/facebookresearch/CPA) [[GitHub2]](https://github.com/theislab/cpa) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://www.embopress.org/doi/pdfdirect/10.15252/msb.202211517) The Compositional Perturbation Autoencoder learns effects of perturbations at the single-cell level
 - **chemCPA (2022).** [[Article]](https://neurips.cc/virtual/2022/poster/53227) [[GitHub]](https://github.com/theislab/chemcpa) [[Theis Lab]](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) [[pdf]](https://openreview.net/pdf?id=vRrFVHxFiXJ) Predicting Cellular Responses to Novel Drug Perturbations at a Single-Cell Resolution
-- **MrVI (2022).** [[BioRxiv]](https://www.biorxiv.org/content/early/2022/10/06/2022.10.04.510898) [[GitHub]](https://github.com/YosefLab/mrvi) [[Lab]](https://yoseflab.github.io/) [[pdf]](https://www.biorxiv.org/content/early/2022/10/06/2022.10.04.510898.full.pdf) Multi-resolution Variational Inference for quantifying sample-level heterogeneity in single-cell omics
+- **MrVI (2022).** [[BioRxiv]](https://www.biorxiv.org/content/early/2022/10/06/2022.10.04.510898) [[GitHub]](https://github.com/YosefLab/mrvi) [[Yosef Lab]](https://yoseflab.github.io/) [[pdf]](https://www.biorxiv.org/content/early/2022/10/06/2022.10.04.510898.full.pdf) Multi-resolution Variational Inference for quantifying sample-level heterogeneity in single-cell omics
 
 <br>
 
@@ -141,7 +149,9 @@
 
 ## Related Lists
 
-- https://github.com/OmicsML/awesome-foundation-model-single-cell-papers
+- [List of awesome-deep-learning-single-cell-papers by OmicsML](https://github.com/OmicsML/awesome-deep-learning-single-cell-papers)
+- [List of awesome-foundation-model-single-cell-papers by OmicsML](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers)
+- [Survey of single cell models by Qi Liu](https://github.com/qiliu-ghddi/singlecell_gpt?tab=readme-ov-file#survey-andor-references)
 
 <br>
 
