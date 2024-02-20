@@ -9,14 +9,14 @@
 ## Basics
 
 ### Books
-- **Single-cell best practices** (brought by [Theislab](https://www.github.com/theislab)) https://www.sc-best-practices.org/
+- **Single-cell best practices** (by [Theislab](https://www.github.com/theislab)) https://www.sc-best-practices.org/
 - **Analysis of single cell RNA-seq data** https://www.singlecellcourse.org/
 - **Orchestrating Single-Cell Analysis with Bioconductor** https://bioconductor.org/books/release/OSCA/
 - **Best Practices for Spatial Transcriptomics Analysis with Bioconductor** https://lmweber.org/BestPracticesST/
 
 ### Papers
-- **Best practices for single-cell analysis across modalities (2023)** https://www.nature.com/articles/s41576-023-00586-w
-- **Current best practices in single‐cell RNA‐seq analysis: a tutorial (2019)** https://www.embopress.org/doi/full/10.15252/msb.20188746 
+- **Best practices for single-cell analysis across modalities (2023)** [[paper]](https://www.nature.com/articles/s41576-023-00586-w)
+- **Current best practices in single‐cell RNA‐seq analysis: a tutorial (2019)** [[paper]](https://www.embopress.org/doi/full/10.15252/msb.20188746) 
 
 <br>
 
