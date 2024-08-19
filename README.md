@@ -100,6 +100,8 @@
   - mvTCR (Drost et al., 2022)
   - scPoli (De Donno et al., 2022)
 
+- **Mowgli (2023).** [[Article]](https://www.nature.com/articles/s41467-023-43019-2) [[Doc]](https://mowgli.readthedocs.io/en/latest/) [[GitHub]](https://github.com/cantinilab/mowgli) [[pdf]](https://www.nature.com/articles/s41467-023-43019-2.pdf) Multi Omics Wasserstein inteGrative anaLysIs
+
 <br>
 
 ## Convolutional Neural Networks
@@ -127,6 +129,7 @@
 ## Graph Neural Network Models
 
 - **scGCN (2020).** [[Article]](https://www.nature.com/articles/s41467-021-24172-y) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.09.13.295535) [[GitHub]](https://github.com/QSong-github/scGCN) [[pdf]](https://www.nature.com/articles/s41467-021-24172-y.pdf) a graph convolutional networks algorithm for knowledge transfer in single cell omics
+- **GLUE (2021).** [[Article]](https://www.nature.com/articles/s41587-022-01284-4) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2021.08.22.457275) [[GitHub]](https://github.com/gao-lab/GLUE) [[pdf]](https://www.nature.com/articles/s41587-022-01284-4.pdf) Graph-Linked Unified Embedding
 - **DeepMAPS (2021).** [[Article]](https://www.nature.com/articles/s41467-023-36559-0) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2021.10.31.466658) [[GitHub]](https://github.com/OSU-BMBL/deepmaps) [[pdf]](https://www.nature.com/articles/s41467-023-36559-0.pdf) Single-cell biological network inference using a heterogeneous graph transformer
 - **GEARS (2022).** [[Article]](https://www.nature.com/articles/s41587-023-01905-6) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735) [[GitHub]](https://github.com/snap-stanford/GEARS) [[Leskovec Lab]](http://snap.stanford.edu/) [[pdf]](https://www.nature.com/articles/s41587-023-01905-6.pdf) a geometric deep learning model that predicts outcomes of novel multi-gene perturbations
 
