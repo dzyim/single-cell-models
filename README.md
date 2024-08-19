@@ -62,10 +62,14 @@
 - **svaseq (2014).** [[Article]](https://academic.oup.com/nar/article/42/21/e161/2903156) [[Bioconductor]](https://bioconductor.org/packages/release/bioc/html/sva.html) [[GitHub]](https://github.com/jtleek/sva-devel) removing batch effects with known control probes
 - **Seurat v2 (2018).** [[Home]](https://satijalab.org/seurat/) [[Article]](https://www.nature.com/articles/nbt.4096) [[GitHub]](https://github.com/satijalab/seurat) [[Lab]](https://satijalab.org/) Tools for Single Cell Genomics
 - **fastMNN (2018).** [[Article]](https://www.nature.com/articles/nbt.4091) [[Bioconductor]](https://bioconductor.org/packages/release/bioc/html/batchelor.html) [[GitHub]](https://github.com/LTLA/batchelor/) [[Lab]](https://www.mdc-berlin.de/haghverdi) batch effect correction by matching mutual nearest neighbors
+- **MOFA (2018).** [[Home]](https://biofam.github.io/MOFA2/) [[Article]](https://www.embopress.org/doi/full/10.15252/msb.20178124) [[GitHub]](https://github.com/bioFAM/MOFA) [[pdf]](https://www.embopress.org/doi/pdf/10.15252/msb.20178124) Multi-Omics Factor Analysis
 - **LIGER (2019).** [[Article]](https://www.cell.com/cell/fulltext/S0092-8674(19)30504-5) [[CRAN]](https://cran.r-project.org/web/packages/rliger/) [[GitHub]](https://github.com/welch-lab/liger) [[PyLiger]](https://github.com/welch-lab/pyliger) [[Lab]](https://welch-lab.github.io/) Linked Inference of Genomic Experimental Relationships
 - **Harmony (2019).** [[Home]](https://portals.broadinstitute.org/harmony/index.html) [[Article]](https://www.nature.com/articles/s41592-019-0619-0) [[CRAN]](https://cran.r-project.org/web/packages/harmony/) [[GitHub]](https://github.com/immunogenomics/harmony) [[harmonypy]](https://github.com/slowkow/harmonypy) [[Lab]](https://immunogenomics.hms.harvard.edu/) Fast, sensitive and accurate integration of single-cell data
 - **Scanorama (2019).** [[Home]](https://cb.csail.mit.edu/cb/scanorama/) [[Article]](https://www.nature.com/articles/s41587-019-0113-3) [[GitHub]](https://github.com/brianhie/scanorama) [[Lab]](https://people.csail.mit.edu/bab/) Panoramic stitching of single cell data
 - **GeoSketch (2019).** [[Home]](https://cb.csail.mit.edu/cb/geosketch/) [[Article]](https://www.cell.com/cell-systems/fulltext/S2405-4712(19)30152-8) [[GitHub]](https://github.com/brianhie/geosketch) [[Lab]](https://people.csail.mit.edu/bab/) Geometric sketching compactly summarizes the single-cell transcriptomic landscape
+- **MOFA+ (2020).** [[Home]](https://biofam.github.io/MOFA2/) [[Article]](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1) [[Bioconductor]](https://www.bioconductor.org/packages/release/bioc/html/MOFA2.html) [[GitHub]](https://github.com/bioFAM/MOFA2) [[pdf]](https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-020-02015-1.pdf) Multi-Omics Factor Analysis v2
+- **MEFISTO (2020).** [[Home]](https://biofam.github.io/MOFA2/) [[Article]](https://www.nature.com/articles/s41592-021-01343-9) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.11.03.366674) [[GitHub]](https://github.com/bioFAM/mofapy2) [[pdf]](https://www.nature.com/articles/s41592-021-01343-9.pdf) a flexible and versatile toolbox for modeling high-dimensional data when spatial or temporal dependencies between the samples are known
+- **Cellij (2023).** [[Article]](https://icml-compbio.github.io/2023/papers/WCBICML2023_paper124.pdf) [[GitHub]](https://github.com/bioFAM/cellij) [[pdf]](https://icml-compbio.github.io/2023/papers/WCBICML2023_paper124.pdf) A Modular Factor Model Framework
 
 <br>
 
@@ -122,7 +126,9 @@
 
 ## Graph Neural Network Models
 
-- **GEARS (2022).** [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735) [[GitHub]](https://github.com/snap-stanford/GEARS) [[Leskovec Lab]](http://snap.stanford.edu/) [[pdf]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735.full.pdf) a geometric deep learning model that predicts outcomes of novel multi-gene perturbations
+- **scGCN (2020).** [[Article]](https://www.nature.com/articles/s41467-021-24172-y) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2020.09.13.295535) [[GitHub]](https://github.com/QSong-github/scGCN) [[pdf]](https://www.nature.com/articles/s41467-021-24172-y.pdf) a graph convolutional networks algorithm for knowledge transfer in single cell omics
+- **DeepMAPS (2021).** [[Article]](https://www.nature.com/articles/s41467-023-36559-0) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2021.10.31.466658) [[GitHub]](https://github.com/OSU-BMBL/deepmaps) [[pdf]](https://www.nature.com/articles/s41467-023-36559-0.pdf) Single-cell biological network inference using a heterogeneous graph transformer
+- **GEARS (2022).** [[Article]](https://www.nature.com/articles/s41587-023-01905-6) [[BioRxiv]](https://www.biorxiv.org/content/10.1101/2022.07.12.499735) [[GitHub]](https://github.com/snap-stanford/GEARS) [[Leskovec Lab]](http://snap.stanford.edu/) [[pdf]](https://www.nature.com/articles/s41587-023-01905-6.pdf) a geometric deep learning model that predicts outcomes of novel multi-gene perturbations
 
 <br>
 
